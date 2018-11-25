@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Fruits Game</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, scalable=yes">
-        <link rel="stylesheet"  href="styling.css">
-        
-        <link rel="stylesheet" href="jquery/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+        <title>Drawing App</title>
+        <meta name="viewport" content="initlal-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
     </head>
     <body>
-    <div id="container">
-             <div id="trialsLeft"></div>
-        <div id="score">
-        score: <span id="scoreValue">0</span>
+<!--    Title-->
+        <div id="header">Drawing app</div>
+        
+<!--    input-->
+        <div class="inputContainer">
+            <!--color-->
+            <div class="input" id="colorInput">
+                <input type="color" list id="paintColor">
+            </div>
+            <!--Size-->
+            <div class="input" id="thicknessInput">
+                <div id="circle"></div>
+            </div>
+            <div class="input">
+               <div id="slider"></div>
+            </div>
         </div>
         
-        <div id="correct">
-        Correct!
+<!--        Canvas container-->
+        <div id="container">
+        <canvas id="paint" width="500px" height="400px">
+            
+            </canvas>
         </div>
         
-        <div id="wrong">
-            Try again
-        </div>
-        
-        <div id="fruitsContainer">
-            <img id="fruit1" class="fruit" >
-        </div>
-        
-        <div id="instruction">
-        Catch Fruits
-        </div>
-   
-        
-        <div id="startreset">Start Game</div>
-   
-        
-        <div id="gameOver">
-   
-        </div>
+<!--Buttons-->
+        <div class="inputContainer2" >
+<!--            Erase-->
+            <div class="input2">
+                <span id="erase" class="button">Erase</span>
+            </div>
+            
+            <!--            Save-->
+            <div class="input2">
+                <span id="save" class="button">Save</span>
+            </div>
+            
+            <!--            Reset-->
+            <div class="input2">
+                <span id="reset" class="button">Reset</span>
+            </div>
         
         </div>
-        <audio id="sliceSound">
-            <source src="audio/slicefruit.mp3">
-            <source src="audio/slicefruit.ogg">
-        </audio>
-       
-        <script src="jquery/jquery-3.3.1.js"></script>
-        <script src="jquery.js"></script>
-         <script src="jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <!--Embedded scripts-->
+        <script src="jquery-3.3.1.js"></script>
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="javascript.js"></script>
     </body>
 </html>
