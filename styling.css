@@ -1,0 +1,115 @@
+/*Style body by adding backgroud image and set it to cover, and  font family*/
+
+body{
+    background: url(images/downloadfile.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arvo, sans-serif;
+ 
+
+}
+
+
+/*Style the brand image*/
+.logo{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    width: 95px;
+    top: -15px;
+    left: -20px;
+    
+}
+/*Style navbar*/
+.navbar-inverse{
+    background: rgba(0,0,0,0.5);
+
+}
+
+.nav li{
+    font-size: 17px;
+    margin-right: 34px;
+    padding: 10px 0;
+    color: #fff;
+}
+.nav li:hover{
+    border-bottom: 1px solid #00ffb8;
+    padding-bottom: 9px;
+    cursor: pointer;
+    color: white;
+}
+
+/*Style jumbotron*/
+.jumbotron{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 2.5px;
+    margin-top: 70px;
+    
+}
+/*Limit the width of the icons section*/
+.container{
+    max-width: 1000px;
+}
+/*Style icons section using bootstrap grid system*/
+#icons img{
+    height: 136px; 
+}
+
+.col-md-4{
+    text-align: center;
+    color: white;
+}
+#icons p{
+    font-size: 15px;
+}
+
+/*Style contact button*/
+#contact{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.btn{
+    background: #ff0c00;
+    color: white;
+    font-size: 18px;
+    padding: 10px 70px;
+    letter-spacing: 1.3px;
+    
+}
+.btn:hover{
+    opacity: .8;
+    background-color: rgba(200,200,200,0.5);
+    border: none;
+    color: whitesmoke;
+}
+
+.btn:active{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: red;
+}
+
+/*Style footer*/
+
+.footer{
+    background-color: rgba(0,0,0,0.5);
+    color: grey;
+    font-size: 15px;
+    padding: 10px 0;
+}
+/*Use media queries to change icons size in small devices*/
+
+@media (max-width: 768px){
+    #icons img{
+        height: 70px;
+        
+    }
+}
