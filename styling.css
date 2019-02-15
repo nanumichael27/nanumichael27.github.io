@@ -216,6 +216,7 @@ body{
 #raps img {
     position: relative;
     width: 90%;
+    border-radius: 15px;
     
     
 }
@@ -227,7 +228,8 @@ body{
     margin: 0 auto;
     padding-top:20px;
     height: 700px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    border-radius: 15px;
         
     
     
@@ -249,11 +251,17 @@ body{
 #uscoImage {
     text-align: center;
     margin-bottom: 0px;
+    padding: 0;
     position: relative;
-    top: 90px;
+    border-radius: 60px;
+    
+    
     
 }
 
 #uscoImage img{
     width: 95%;
+    padding: 0;
+    border-radius: 20px;
+    
 }
