@@ -1,0 +1,34 @@
+
+
+
+.projMenu {
+    margin-bottom: 30px;
+}
+
+@media(max-width: 768px){
+    
+    .intro-text h1{
+        font-size: 50px;
+    }
+   
+    
+    
+}
+#raps .row{
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#raps div{
+    margin-bottom: 20px
+}
+
+.raps-images{
+    background: linear-gradient(#F6F6F6, #509BDB);
+    background: -moz-linear-gradient(#F6F6F6, #509BDB);
+    background: -webkit-linear-gradient(#F6F6F6, #509BDB);
+    background: -o-linear-gradient(#F6F6F6, #509BDB);
+ 
+}
+
